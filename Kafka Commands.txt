@@ -1,0 +1,10 @@
+Producing Data/Event to topic "test":  kafka-console-producer.bat --topic test --broker-list localhost:9092
+
+Consuming Data/Event on topic "test" from CMD:  kafka-console-consumer.bat --topic test --from-beginning --bootstrap-server localhost:9092
+
+Creating a topic:   kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+
+
+Useful Links:
+https://www.loginradius.com/blog/async/quick-kafka-installation/
